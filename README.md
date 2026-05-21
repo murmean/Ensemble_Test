@@ -82,4 +82,3 @@ If tests fail:
 2. Check internet connection
 3. Verify credentials are correct
 4. Increase wait time for CAPTCHA in `fill_sign_in()` method
-```
