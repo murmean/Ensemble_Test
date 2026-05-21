@@ -20,15 +20,6 @@ Automated test suite for Goodreads website using Selenium WebDriver and pytest.
 pip install -r requirements.txt
 ```
 
-## Configuration
-
-Update the credentials in `test_goodreads.py`:
-
-```python
-EMAIL = "your_email@gmail.com"
-PASSWORD = "your_password"
-```
-
 ## Running Tests
 
 Run all tests:
@@ -73,14 +64,14 @@ pytest test_goodreads.py::test_search_and_want_to_read -v -s
 - Verify review posted
 
 ## Files
- `conftest.py` | pytest configuration and fixtures 
- `pages.py` | Page Object Model for Goodreads 
- `test_goodreads.py` |Test cases 
- `requirements.txt`  Python dependencies 
+ `conftest.py` pytest configuration and fixtures 
+ `pages.py` Page Object Model for Goodreads 
+ `test_goodreads.py` Test cases 
+ `requirements.txt` Python dependencies 
 
 ## Notes
 
-- CAPTCHA requires manual intervention during login (30 second wait)
+- CAPTCHA requires manual intervention during login (5 second wait)
 - Email verification is skipped for sign up
 - Tests use an existing account for login
 
